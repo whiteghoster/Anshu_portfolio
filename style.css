@@ -437,6 +437,73 @@ header {
   border-radius: 10px;
 }
 
+
+.resume-container {
+  background-color: rgb(19, 4, 104);
+  color: #FFE066;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.resume-section {
+  position: relative;
+  flex: 1;
+  padding-left: 60px;
+  /* give space for line + circle */
+}
+
+.resume-entry {
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.resume-entry::before {
+  content: attr(data-year);
+  position: absolute;
+  left: -80px;
+  top: 0;
+  background: #7e6fff;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 65px;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.resume-section h2 {
+  text-align: left;
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+.resume-entry h3 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.resume-entry h4 {
+  margin: 5px 0;
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.resume-entry p {
+  font-size: 14px;
+  margin-top: 5px;
+  line-height: 1.6;
+  color: #ffffff;
+}
+
 .contact-section {
   width: 100%;
   min-height: 100vh;
@@ -602,8 +669,6 @@ footer {
   li {
     font-size: 1rem;
   }
-
-
 }
 
 @media (max-width:484px) {
@@ -622,75 +687,6 @@ footer {
     width: 100%;
     height: 100%;
   }
-}
-
-
-.resume-container {
-  background-color: rgb(19, 4, 104);
-  color: #FFE066
-  ;
-  padding: 40px;
-  display: flex;
-  justify-content: space-between;
-  gap: 50px;
-  flex-wrap: wrap;
-}
-
-.resume-section {
-  position: relative;
-  flex: 1;
-  padding-left: 60px;
-  /* give space for line + circle */
-}
-
-.resume-entry {
-  position: relative;
-  margin-bottom: 60px;
-}
-
-.resume-entry::before {
-  content: attr(data-year);
-  position: absolute;
-  left: -80px;
-  /* position the year to the left of the entry */
-  top: 0;
-  background: #3a365f;
-  color: #fff;
-  font-size: 14px;
-  font-weight: bold;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.resume-section h2 {
-  text-align: left;
-  margin-bottom: 30px;
-  font-size: 2.5rem;
-  font-weight: 800;
-}
-
-.resume-entry h3 {
-  margin: 0;
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.resume-entry h4 {
-  margin: 5px 0;
-  font-size: 14px;
-  font-weight: bold;
-  color: #ffffff;
-}
-
-.resume-entry p {
-  font-size: 14px;
-  margin-top: 5px;
-  line-height: 1.6;
-  color: #ffffff;
 }
 
 /* Responsive */
@@ -718,5 +714,3 @@ footer {
     height: auto;
   }
 }
-
-
