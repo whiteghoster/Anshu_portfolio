@@ -627,7 +627,8 @@ footer {
 
 .resume-container {
   background-color: rgb(19, 4, 104);
-  color: #ffffff;
+  color: #FFE066
+  ;
   padding: 40px;
   display: flex;
   justify-content: space-between;
@@ -717,4 +718,5 @@ footer {
     height: auto;
   }
 }
+
 
