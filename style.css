@@ -237,14 +237,11 @@ header {
 
 .about-section {
   background-color: rgb(19, 4, 104);
-  display: flex;
-  justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 30px;
+  padding: 10px;
   height: 100%;
 }
-
 
 .me {
   font-size: 1.5rem;
@@ -255,7 +252,6 @@ header {
 .content1 {
   width: 100%;
   padding: 30px;
-  padding: 40px;
   gap: 10px;
 }
 
@@ -712,5 +708,9 @@ footer {
   .blog-content img {
     width: 100%;
     height: auto;
+  }
+
+  .about-content{
+    padding: 0;
   }
 }
